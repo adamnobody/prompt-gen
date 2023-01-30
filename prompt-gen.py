@@ -6,7 +6,7 @@ censorship = ["censored", "nude"]
 
 typeP = ["full_growth", "bust", "portrait"]
 
-pose = ["victory_pose", "bunny_pose", "69 pose"]
+pose = ["victory", "bunny", "69", "random", "missionary"]
 
 skinColor = ["light", "black"]
 
@@ -26,5 +26,5 @@ breasts = ["small", "medium", "big", "huge", "very_huge"]
 
 background = ["white_background", "swimming_pool", "forest", "bedroom", "beach", "classroom", "sky", "street"]
 
-prompt = f"{random.choice(girlsNumber)},{random.choice(censorship)}, {random.choice(typeP)}, {random.choice(pose)}, {random.choice(skinColor)}_skin, pussy, {random.choice(outfitColor)}_{random.choice(outfit)}, {random.choice(accessories)}, {random.choice(jewelry)},{random.choice(hairColor)}_{random.choice(hairLong)}_hair, {random.choice(eyesColor)}_eyes, {random.choice(breasts)}_breasts, nipples, {random.choice(background)}"
+prompt = f"{random.choice(girlsNumber)},{random.choice(censorship)}, {random.choice(typeP)}, {random.choice(pose)}_pose, {random.choice(skinColor)}_skin, pussy, {random.choice(outfitColor)}_{random.choice(outfit)}, {random.choice(accessories)}, {random.choice(jewelry)},{random.choice(hairColor)}_{random.choice(hairLong)}_hair, {random.choice(eyesColor)}_eyes, {random.choice(breasts)}_breasts, nipples, {random.choice(background)}"
 print(prompt)
