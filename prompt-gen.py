@@ -6,11 +6,11 @@ censorship = ["censored", "nude"]
 
 typeP = ["full_growth", "bust", "portrait"]
 
-pose = ["victory", "bunny", "69", "random", "missionary"]
+pose = ["victory", "bunny", "69", "random", "missionary", "doggy_style"]
 
 skinColor = ["light", "black"]
 
-outfit = ["dress", "swimsuit", "school_uniform", "lingerie", "suit", "t-shirt", "skirt"]
+outfit = ["dress", "swimsuit", "school_uniform", "bunnysuit", "lingerie", "suit", "t-shirt", "skirt"]
 outfitColor = ["white", "black", "red", "gray", "green", "yellow", "purple"]
 
 accessories = ["hat", "umbrella", "no_accessories", "smartphone", "watch", "choker", "bows"]
@@ -24,7 +24,9 @@ eyesColor = ["blue", "green", "brown", "yellow", "dark", "red", "amber", "gray"]
 
 breasts = ["small", "medium", "big", "huge", "very_huge"]
 
+ass = ["small", "big", "huge"]
+
 background = ["white_background", "swimming_pool", "forest", "bedroom", "beach", "classroom", "sky", "street"]
 
-prompt = f"{random.choice(girlsNumber)},{random.choice(censorship)}, {random.choice(typeP)}, {random.choice(pose)}_pose, {random.choice(skinColor)}_skin, pussy, {random.choice(outfitColor)}_{random.choice(outfit)}, {random.choice(accessories)}, {random.choice(jewelry)},{random.choice(hairColor)}_{random.choice(hairLong)}_hair, {random.choice(eyesColor)}_eyes, {random.choice(breasts)}_breasts, nipples, {random.choice(background)}"
+prompt = f"{random.choice(girlsNumber)},{random.choice(censorship)}, {random.choice(typeP)}, {random.choice(pose)}_pose, {random.choice(skinColor)}_skin, pussy, {random.choice(outfitColor)}_{random.choice(outfit)}, {random.choice(accessories)}, {random.choice(jewelry)},{random.choice(hairColor)}_{random.choice(hairLong)}_hair, {random.choice(eyesColor)}_eyes, {random.choice(breasts)}_breasts, nipples, {random.choice(ass)}_ass, {random.choice(background)}"
 print(prompt)
