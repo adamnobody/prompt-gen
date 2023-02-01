@@ -10,7 +10,7 @@ pose = ["victory", "bunny", "69", "random", "missionary", "doggy_style"]
 
 skinColor = ["light", "black"]
 
-outfit = ["dress", "swimsuit", "school_uniform", "bunnysuit", "lingerie", "suit", "t-shirt", "skirt"]
+outfit = ["dress", "swimsuit", "school_uniform", "bunnysuit", "lingerie", "cleavage", "suit", "t-shirt", "skirt"]
 outfitColor = ["white", "black", "red", "gray", "green", "yellow", "purple"]
 
 accessories = ["hat", "umbrella", "no_accessories", "smartphone", "watch", "choker", "bows"]
@@ -26,7 +26,12 @@ breasts = ["small", "medium", "big", "huge", "very_huge"]
 
 ass = ["small", "big", "huge"]
 
-background = ["white_background", "swimming_pool", "forest", "bedroom", "beach", "classroom", "sky", "street"]
+background = ["white_background", "swimming_pool", "forest", "bedroom", "mountain_background", "green_valley_background", "beach", "classroom", "sky", "street"]
 
-prompt = f"{random.choice(girlsNumber)},{random.choice(censorship)}, {random.choice(typeP)}, {random.choice(pose)}_pose, {random.choice(skinColor)}_skin, pussy, {random.choice(outfitColor)}_{random.choice(outfit)}, {random.choice(accessories)}, {random.choice(jewelry)},{random.choice(hairColor)}_{random.choice(hairLong)}_hair, {random.choice(eyesColor)}_eyes, {random.choice(breasts)}_breasts, nipples, {random.choice(ass)}_ass, {random.choice(background)}"
+style = ["art by rutkowski", "realistic", "anime", "oil painting"]
+
+negative = "Negative prompt:\nworst quality, bad anatomy, deformed hands, deformed face, deformed breasts, text, watermark, JPEG artefacts"
+
+prompt = f"Prompt:\n{random.choice(girlsNumber)},{random.choice(censorship)}, {random.choice(typeP)}, {random.choice(pose)}_pose, {random.choice(skinColor)}_skin, pussy, {random.choice(outfitColor)}_{random.choice(outfit)}, {random.choice(accessories)}, {random.choice(jewelry)},{random.choice(hairColor)}_{random.choice(hairLong)}_hair, {random.choice(eyesColor)}_eyes, {random.choice(breasts)}_breasts, nipples, {random.choice(ass)}_ass, {random.choice(background)}, {random.choice(style)}"
 print(prompt)
+print(negative)
