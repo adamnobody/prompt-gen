@@ -7,7 +7,7 @@ censorship = ["censored", "nude"]
 
 typeP = ["full_growth", "bust", "portrait"]
 
-pose = ["victory", "bunny", "69", "random", "missionary", "doggy_style"]
+pose = ["victory", "bunny", "69", "missionary", "doggy_style"]
 
 skinColor = ["light", "black"]
 
