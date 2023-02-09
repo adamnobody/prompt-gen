@@ -11,8 +11,8 @@ pose = ["victory", "bunny", "69", "missionary", "doggy_style"]
 
 skinColor = ["light", "black"]
 
-outfit = ["dress", "swimsuit", "school_uniform", "bunnysuit", "lingerie", "cleavage", "suit", "t-shirt", "skirt"]
 outfitColor = ["white", "black", "red", "gray", "green", "yellow", "purple"]
+outfit = ["dress", "swimsuit", "school_uniform", "bunnysuit", "lingerie", "cleavage", "suit", "t-shirt", "skirt"]
 
 accessories = ["hat", "umbrella", "no_accessories", "smartphone", "watch", "choker", "bows"]
 
@@ -34,14 +34,30 @@ background = ["white_background", "swimming_pool", "forest", "bedroom",
 style = ["art by rutkowski", "realistic", "anime", "oil painting"]
 
 tags = [girlsNumber, censorship, typeP, pose, skinColor, 
-       outfit, outfitColor, accessories, jewelry, hairLong, 
+       outfitColor, outfit, accessories, jewelry, hairLong, 
        hairColor, eyesColor, breasts, ass, background, style]
 
 negative = "worst quality, bad anatomy, deformed hands, deformed face, deformed breasts, text, watermark, JPEG artefacts"
 
 prompt = ""
 for i in range(len(tags)):
-    prompt += f"{random.choice(tags[i])},"
+    if tags[i] == outfitColor:
+        prompt += f"{random.choice(tags[i])} "
+
+    elif tags[i] == hairLong or tags[i] == hairColor:
+        prompt += f"{random.choice(tags[i])}_hair,"
+
+    elif tags[i] == eyesColor:
+        prompt += f"{random.choice(tags[i])}_eyes,"
+
+    elif tags[i] == breasts:
+        prompt += f"{random.choice(tags[i])}_breasts,"
+
+    elif tags[i] == ass:
+        prompt += f"{random.choice(tags[i])}_ass,"
+
+    else:
+        prompt += f"{random.choice(tags[i])},"
 
 print(f"Prompt:\n{Fore.GREEN}{prompt}\n{Fore.WHITE}Negative prompt:\n{Fore.GREEN}{negative}")
 print(f"""{Fore.WHITE}For this generation, I recommend using \"Euler a\", \"DDIM\" or \"DPM++\" sampler methods:
