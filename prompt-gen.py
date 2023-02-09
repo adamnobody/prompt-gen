@@ -27,16 +27,37 @@ breasts = ["small", "medium", "big", "huge", "very_huge"]
 
 ass = ["small", "big", "huge"]
 
-background = ["white_background", "swimming_pool", "forest", "bedroom", "mountain_background", "green_valley_background", "beach", "classroom", "sky", "street"]
+background = ["white_background", "swimming_pool", "forest", "bedroom", 
+              "mountain_background", "green_valley_background", "beach", 
+              "classroom", "sky", "street"]
 
 style = ["art by rutkowski", "realistic", "anime", "oil painting"]
 
-negative = f"{Fore.WHITE}Negative prompt:{Fore.GREEN}\nworst quality, bad anatomy, deformed hands, deformed face, deformed breasts, text, watermark, JPEG artefacts"
+tags = [girlsNumber, censorship, typeP, pose, skinColor, 
+       outfit, outfitColor, accessories, jewelry, hairLong, 
+       hairColor, eyesColor, breasts, ass, background, style]
 
-prompt = f"{Fore.WHITE}Prompt:{Fore.GREEN}\n{random.choice(girlsNumber)},{random.choice(censorship)}, {random.choice(typeP)}, {random.choice(pose)}_pose, {random.choice(skinColor)}_skin, pussy, {random.choice(outfitColor)}_{random.choice(outfit)}, {random.choice(accessories)}, {random.choice(jewelry)},{random.choice(hairColor)}_{random.choice(hairLong)}_hair, {random.choice(eyesColor)}_eyes, {random.choice(breasts)}_breasts, nipples, {random.choice(ass)}_ass, {random.choice(background)}, {random.choice(style)}"
-print(f"{prompt}\n{negative}")
+negative = "worst quality, bad anatomy, deformed hands, deformed face, deformed breasts, text, watermark, JPEG artefacts"
+
+prompt = ""
+for i in range(len(tags)):
+    prompt += f"{random.choice(tags[i])},"
+
+print(f"Prompt:\n{Fore.GREEN}{prompt}\n{Fore.WHITE}Negative prompt:\n{Fore.GREEN}{negative}")
 print(f"""{Fore.WHITE}For this generation, I recommend using \"Euler a\", \"DDIM\" or \"DPM++\" sampler methods:
     \"Euler a\" - 25-35 steps.
     \"DDIM\" - 30-40 steps.
     \"DMP++\" methods - 20-30 steps.
-Resolution for generations - 512x768.""")
+Resolution for generations - 512x768.
+CFG Scale - 7-10.""")
+
+
+
+
+
+
+
+
+
+
+
