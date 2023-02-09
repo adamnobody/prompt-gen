@@ -59,7 +59,7 @@ for i in range(len(tags)):
     else:
         prompt += f"{random.choice(tags[i])},"
 
-print(f"Prompt:\n{Fore.GREEN}{prompt}\n{Fore.WHITE}Negative prompt:\n{Fore.GREEN}{negative}")
+print(f"Prompt:\n{Fore.GREEN}{prompt}pussy\n{Fore.WHITE}Negative prompt:\n{Fore.GREEN}{negative}")
 print(f"""{Fore.WHITE}For this generation, I recommend using \"Euler a\", \"DDIM\" or \"DPM++\" sampler methods:
     \"Euler a\" - 25-35 steps.
     \"DDIM\" - 30-40 steps.
