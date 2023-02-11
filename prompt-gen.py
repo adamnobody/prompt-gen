@@ -5,18 +5,18 @@ girlsNumber = ["1girl", "2girls", "3girls"]
 
 censorship = ["censored", "nude"]
 
-typeP = ["full_growth", "bust", "portrait"]
+typeP = ["full growth", "bust", "portrait"]
 
 pose = ["victory", "bunny", "69", "missionary", "doggystyle"]
 
 skinColor = ["light", "black"]
 
 outfitColor = ["white", "black", "red", "gray", "green", "yellow", "purple"]
-outfit = ["dress", "swimsuit", "school_uniform", "bunnysuit", "lingerie", "cleavage", "suit", "t-shirt", "skirt"]
+outfit = ["dress", "swimsuit", "school uniform", "bunnysuit", "lingerie", "cleavage", "suit", "t-shirt", "skirt"]
 
-accessories = ["hat", "umbrella", "no_accessories", "smartphone", "watch", "choker", "bows"]
+accessories = ["hat", "umbrella", "no accessories", "watch", "choker"]
 
-jewelry = ["no_jewelry", "necklace", "medallion", "gems", "bracelet"]
+jewelry = ["no jewelry", "necklace", "medallion", "gems", "bracelet"]
 
 hairLong = ["cut", "long", "very long"]
 hairColor = ["blonde", "black", "green", "red", "blue", "brown", "strawberry blonde", "golden blonde"]
