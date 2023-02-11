@@ -7,7 +7,7 @@ censorship = ["censored", "nude"]
 
 typeP = ["full_growth", "bust", "portrait"]
 
-pose = ["victory", "bunny", "69", "missionary", "doggy_style"]
+pose = ["victory", "bunny", "69", "missionary", "doggystyle"]
 
 skinColor = ["light", "black"]
 
@@ -18,17 +18,17 @@ accessories = ["hat", "umbrella", "no_accessories", "smartphone", "watch", "chok
 
 jewelry = ["no_jewelry", "necklace", "medallion", "gems", "bracelet"]
 
-hairLong = ["cut", "long", "very_long"]
-hairColor = ["blonde", "black", "green", "red", "blue", "brown", "strawberry_blonde", "golden_blonde"]
+hairLong = ["cut", "long", "very long"]
+hairColor = ["blonde", "black", "green", "red", "blue", "brown", "strawberry blonde", "golden blonde"]
 
 eyesColor = ["blue", "green", "brown", "yellow", "dark", "red", "amber", "gray"]
 
-breasts = ["small", "medium", "big", "huge", "very_huge"]
+breasts = ["small", "medium", "big", "huge", "very huge"]
 
 ass = ["small", "big", "huge"]
 
-background = ["white_background", "swimming_pool", "forest", "bedroom", 
-              "mountain_background", "green_valley_background", "beach", 
+background = ["white background", "swimming pool", "forest", "bedroom", 
+              "mountain background", "green valley background", "beach", 
               "classroom", "sky", "street"]
 
 style = ["art by rutkowski", "realistic", "anime", "oil painting"]
@@ -41,23 +41,29 @@ negative = "worst quality, bad anatomy, deformed hands, deformed face, deformed 
 
 prompt = ""
 for i in range(len(tags)):
-    if tags[i] == outfitColor:
+    if tags[i] == pose:
+        prompt += f"{random.choice(tags[i])} pose, "
+
+    elif tags[i] == skinColor:
+        prompt += f"{random.choice(tags[i])} skin, "
+
+    elif tags[i] == outfitColor:
         prompt += f"{random.choice(tags[i])} "
 
     elif tags[i] == hairLong or tags[i] == hairColor:
-        prompt += f"{random.choice(tags[i])}_hair,"
+        prompt += f"{random.choice(tags[i])} hair, "
 
     elif tags[i] == eyesColor:
-        prompt += f"{random.choice(tags[i])}_eyes,"
+        prompt += f"{random.choice(tags[i])} eyes, "
 
     elif tags[i] == breasts:
-        prompt += f"{random.choice(tags[i])}_breasts,"
+        prompt += f"{random.choice(tags[i])} breasts, "
 
     elif tags[i] == ass:
-        prompt += f"{random.choice(tags[i])}_ass,"
+        prompt += f"{random.choice(tags[i])} ass, "
 
     else:
-        prompt += f"{random.choice(tags[i])},"
+        prompt += f"{random.choice(tags[i])}, "
 
 print(f"Prompt:\n{Fore.GREEN}{prompt}pussy\n{Fore.WHITE}Negative prompt:\n{Fore.GREEN}{negative}")
 print(f"""{Fore.WHITE}For this generation, I recommend using \"Euler a\", \"DDIM\" or \"DPM++\" sampler methods:
